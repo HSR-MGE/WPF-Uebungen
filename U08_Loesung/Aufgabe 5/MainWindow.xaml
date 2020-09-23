@@ -1,0 +1,51 @@
+﻿<Window x:Class="Aufgabe_5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aufgabe_5"
+        mc:Ignorable="d"
+        Title="Hello WPF!"
+        Height="450"
+        Width="800"
+        Background="#0065A3" 
+        Foreground="White">
+
+    <StackPanel HorizontalAlignment="Center"
+                VerticalAlignment="Center">
+
+        <TextBlock Name="Greeting" 
+                   Text="Hello, World!" 
+                   FontSize="48" 
+                   FontFamily="Segoe UI Light" 
+                   Margin="0,0,0,40" />
+
+        <TextBlock Text="What's your name?" 
+                   FontSize="16" 
+                   FontFamily="Segoe UI Light" />
+
+        <StackPanel Orientation="Horizontal"
+                    Margin="0,20,0,0" >
+
+            <TextBox Name="NameInput" 
+                     Width="300" 
+                     FontSize="16" 
+                     VerticalContentAlignment="Center" 
+                     FontFamily="Segoe UI" 
+                     BorderThickness="0" 
+                     HorizontalAlignment="Left" 
+                     Margin="0,0,10,0"/>
+
+            <Button Name="SayHelloButton" 
+                    Content="Say &quot;Hello&quot;" 
+                    FontSize="16" 
+                    FontFamily="Segoe UI Light" 
+                    Background="#0065A3" 
+                    BorderThickness="2" 
+                    BorderBrush="White" 
+                    Foreground="White" 
+                    Padding="4" 
+                    Click="SayHelloButton_OnClick" />
+        </StackPanel>
+    </StackPanel>
+</Window>
