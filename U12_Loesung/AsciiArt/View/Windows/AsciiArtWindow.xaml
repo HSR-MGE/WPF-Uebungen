@@ -99,8 +99,7 @@
                     Grid.Column="1"
                     Content="Berechnen"
                     HorizontalAlignment="Left"
-                    Command="{Binding CreateAsciiCommand}"
-                    IsEnabled="{Binding }"/>
+                    Command="{Binding CreateAsciiCommand}"/>
         </Grid>
 
         <Grid>
