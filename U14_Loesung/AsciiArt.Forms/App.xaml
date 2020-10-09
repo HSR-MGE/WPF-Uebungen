@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AsciiArt.Forms.App">
+    <Application.Resources>
+
+        <ResourceDictionary>
+            <Color x:Key="PrimaryColor">#8C185F</Color>
+            <Color x:Key="PrimaryDarkColor">#5A0035</Color>
+
+            <Style TargetType="Button">
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="BackgroundColor" Value="{StaticResource PrimaryDarkColor}" />
+            </Style>
+
+            <Style TargetType="Slider">
+                <Setter Property="ThumbColor" Value="{StaticResource PrimaryColor}" />
+                <Setter Property="MinimumTrackColor" Value="{StaticResource PrimaryDarkColor}" />
+                <Setter Property="MaximumTrackColor" Value="LightSlateGray" />
+            </Style>
+
+            <Style x:Key="InputEditor" TargetType="Editor">
+                <Setter Property="TextTransform" Value="None" />
+                <Setter Property="AutoSize" Value="Disabled" />
+                <Setter Property="Keyboard" Value="Plain" />
+                <Setter Property="IsSpellCheckEnabled" Value="False" />
+                <Setter Property="IsTextPredictionEnabled" Value="False" />
+            </Style>
+
+            <Style x:Key="OutputLabel" TargetType="Label">
+                <Setter Property="FontFamily" Value="monospace" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="TextColor" Value="Black" />
+            </Style>
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>

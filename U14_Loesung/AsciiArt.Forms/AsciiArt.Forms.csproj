@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Figgle" Version="0.4.0" />
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1534" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AsciiArt.Core\AsciiArt.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Pages\AsciiArtPage.xaml.cs">
+      <DependentUpon>AsciiArtPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Pages\AsciiArtPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

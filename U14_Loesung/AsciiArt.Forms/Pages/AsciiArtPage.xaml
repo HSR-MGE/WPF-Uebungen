@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="AsciiArt.Forms.Pages.AsciiArtPage">
+
+    <ContentPage Title="Eingabe" Padding="8">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Editor Grid.Row="0"
+                    Text="{Binding Input}"
+                    Placeholder="Hier Text eingeben"
+                    Style="{StaticResource InputEditor}" />
+
+            <Button Grid.Row="1"
+                    Text="Berechnen"
+                    Command="{Binding CreateAsciiCommand}" />
+        </Grid>
+    </ContentPage>
+
+    <ContentPage Title="Ausgabe">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Label
+                   Text="{Binding Result}"
+                   FontSize="{Binding FontSize}"
+                   Style="{StaticResource OutputLabel}"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+
+            <Slider Margin="5, 0, 5, 10"
+                    Grid.Row="1"
+                    Maximum="{Binding MaximumFontSize}"
+                    Minimum="{Binding MinimumFontSize}"
+                    Value="{Binding FontSize}" />
+        </Grid>
+    </ContentPage>
+
+</TabbedPage>
