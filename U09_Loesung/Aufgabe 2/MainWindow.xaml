@@ -7,7 +7,8 @@
         Title="Color Sliders"
         Height="350"
         Width="525"
-        ResizeMode="NoResize">
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
     <DockPanel>
         <StackPanel Margin="10" VerticalAlignment="Center" DockPanel.Dock="Top">
 
@@ -79,15 +80,13 @@
 
         </StackPanel>
 
-        <Border Margin="10">
-            <Grid>
-                <Rectangle Fill="#000000" Name="ColorArea" />
-                <Label Name="ColorLabel"
-                       Foreground="White"
-                       Content="#000000"
-                       VerticalContentAlignment="Center"
-                       HorizontalContentAlignment="Center" />
-            </Grid>
-        </Border>
+        <Grid Margin="10">
+            <Rectangle Fill="#000000" Name="ColorArea" />
+            <Label Name="ColorLabel"
+                   Foreground="White"
+                   Content="#000000"
+                   VerticalContentAlignment="Center"
+                   HorizontalContentAlignment="Center" />
+        </Grid>
     </DockPanel>
 </Window>
