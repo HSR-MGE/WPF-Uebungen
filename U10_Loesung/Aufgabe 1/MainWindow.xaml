@@ -63,16 +63,16 @@
     </Window.Resources>
 
     <DockPanel>
-        <StackPanel DockPanel.Dock="Bottom" Background="{StaticResource LightGray}">
-            <DockPanel Margin="10" LastChildFill="False">
+        <Border DockPanel.Dock="Bottom" Background="{StaticResource LightGray}" Padding="10">
+            <DockPanel LastChildFill="False">
                 <Button DockPanel.Dock="Left" Style="{StaticResource HelpButtonStyle}">Hilfe</Button>
                 <Button DockPanel.Dock="Right">Abbrechen</Button>
                 <Button DockPanel.Dock="Right" Style="{StaticResource PrimaryButtonStyle}">Speichern</Button>
             </DockPanel>
-        </StackPanel>
+        </Border>
 
         <DockPanel>
-            <Grid DockPanel.Dock="Left" Width="64" Height="64" VerticalAlignment="Center" Margin="0 10">
+            <Grid DockPanel.Dock="Left" Width="64" Height="64" VerticalAlignment="Center">
                 <Polygon Points="8,52 56,52 32,8" Fill="{StaticResource MediumGray}" />
                 <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="24" FontWeight="DemiBold">!</TextBlock>
             </Grid>

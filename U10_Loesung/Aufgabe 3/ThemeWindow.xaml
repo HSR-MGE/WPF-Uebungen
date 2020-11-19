@@ -12,14 +12,14 @@
         ResizeMode="NoResize">
 
     <DockPanel>
-        <StackPanel DockPanel.Dock="Bottom" Background="{StaticResource LightGray}">
-            <DockPanel Margin="10" LastChildFill="False">
+        <Border DockPanel.Dock="Bottom" Background="{StaticResource LightGray}" Padding="10">
+            <DockPanel LastChildFill="False">
                 <Button DockPanel.Dock="Right" Click="CancelButton_OnClick">Abbrechen</Button>
                 <Button DockPanel.Dock="Right" Style="{StaticResource PrimaryButtonStyle}" Click="ApplyButton_OnClick">Anwenden</Button>
             </DockPanel>
-        </StackPanel>
+        </Border>
 
-        <StackPanel VerticalAlignment="Top">
+        <StackPanel VerticalAlignment="Center">
             <TextBlock Margin="0 0 0 10 " HorizontalAlignment="Center">Theme wählen:</TextBlock>
 
             <StackPanel HorizontalAlignment="Center">
