@@ -1,11 +1,10 @@
-﻿using System.Collections.ObjectModel;
-using System.Windows.Threading;
-
-namespace Aufgabe_1
+﻿namespace Aufgabe_1
 {
     using System;
+    using System.Collections.ObjectModel;
     using System.Windows;
-    
+    using System.Windows.Threading;
+
     public partial class MainWindow : Window
     {
         private readonly DispatcherTimer _timer;

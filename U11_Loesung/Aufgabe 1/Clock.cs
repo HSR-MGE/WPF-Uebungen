@@ -9,7 +9,7 @@
         private readonly DispatcherTimer _timer;
         private readonly TimeSpan _offset;
 
-        // Timer wird injected, damit wir einen "global" Taktgeber haben
+        // Timer wird injected, damit wir einen "globalen" Taktgeber haben
         public Clock(DispatcherTimer timer, TimeSpan offset)
         {
             _timer = timer;

@@ -8,6 +8,7 @@
         d:DataContext="{d:DesignInstance Type=local:MainWindow, IsDesignTimeCreatable=True}"
         Background="Black"
         ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
         Title="Digital Clock"
         Height="275"
         Width="525">

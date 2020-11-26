@@ -8,7 +8,8 @@
         Title="Color Sliders Reloaded"
         Height="350"
         Width="525"
-        ResizeMode="NoResize">
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
 
     <Window.Resources>
         <local:RGBToColorConverter x:Key="RGBToColor" />
