@@ -14,7 +14,8 @@
         Height="600"
         Width="800"
         MinHeight="480"
-        MinWidth="640">
+        MinWidth="640"
+        WindowStartupLocation="CenterScreen">
 
     <Window.Resources>
         <ResourceDictionary>

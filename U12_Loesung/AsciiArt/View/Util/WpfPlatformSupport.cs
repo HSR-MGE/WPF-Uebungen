@@ -39,7 +39,7 @@ namespace AsciiArt.View.Util
         }
 
         /// <summary>
-        /// Zeigt eine Fehlermeldung in einer Message box an
+        /// Zeigt eine Fehlermeldung in einer Message Box an
         /// </summary>
         /// <param name="title">Der Titel für die Fehlermeldung</param>
         /// <param name="msg">Die Nachricht für die Fehlermeldung</param>
