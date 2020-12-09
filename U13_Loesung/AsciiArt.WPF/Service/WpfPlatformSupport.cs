@@ -41,7 +41,7 @@ namespace AsciiArt.WPF.Service
         }
 
         /// <summary>
-        /// Zeigt eine Fehlermeldung in einer Message box an
+        /// Zeigt eine Fehlermeldung in einer MessageBox an
         /// </summary>
         /// <param name="title">Der Titel für die Fehlermeldung</param>
         /// <param name="msg">Die Nachricht für die Fehlermeldung</param>
