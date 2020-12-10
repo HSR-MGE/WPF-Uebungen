@@ -8,26 +8,26 @@ namespace AsciiArt.ViewModel
     {
         // Properties für Bindings
 
-        public int FontSize { get; set; }
+        int FontSize { get; set; }
 
-        public int LineWidth { get; set; }
+        int LineWidth { get; set; }
 
-        public string ImagePath { get; set; }
+        string ImagePath { get; set; }
 
-        public string Result { get; }
+        string Result { get; }
 
-        public bool IsCalculating { get; }
+        bool IsCalculating { get; }
 
         // Commands für Bindings
 
-        public ICommand ChooseImageCommand { get; }
+        ICommand ChooseImageCommand { get; }
 
-        public ICommand CreateAsciiCommand { get; }
+        ICommand CreateAsciiCommand { get; }
 
         // Callbacks für WPF-spezifische Logik
 
-        public Func<string> OnChooseFile { get; set; }
+        Func<string> OnChooseFile { get; set; }
 
-        public Action<string, string> OnShowError { get; set; }
+        Action<string, string> OnShowError { get; set; }
     }
 }
